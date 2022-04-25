@@ -7,18 +7,18 @@ This starter kit is here to easily start a repository for Wild Code School stude
 It's symfony website-skeleton project with some additional library (webpack, fixtures) and tools to validate code standards.
 
 * GrumPHP, as pre-commit hook, will run 2 tools when `git commit` is run :
-  
-    * PHP_CodeSniffer to check PSR12 
+
+    * PHP_CodeSniffer to check PSR12
     * PHPStan focuses on finding errors in your code (without actually running it)
     * PHPmd will check if you follow PHP best practices
-     
+
   If tests fail, the commit is canceled and a warning message is displayed to developper.
 
 * Github Action as Continuous Integration will be run when a branch with active pull request is updated on github. It will run :
 
     * Tasks to check if vendor, .idea, env.local are not versionned,
     * PHP_CodeSniffer, PHPStan and PHPmd with same configuration as GrumPHP.
- 
+
 ## Getting Started for Students
 
 ### Prerequisites
@@ -48,20 +48,21 @@ It's symfony website-skeleton project with some additional library (webpack, fix
 
 ### Windows Users
 
-If you develop on Windows, you should edit you git configuration to change your end of line rules with this command :
+If you develop on Windows, you should edit you git configuration to change your end of line rules with this command:
 
 `git config --global core.autocrlf true`
+
+The `.editorconfig` file in root directory do this for you. You probably need `EditorConfig` extension if your IDE is VSCode.
 
 ## Deployment
 
 Some files are used to manage automatic deployments (using tools as Caprover, Docker and Github Action). Please do not modify them.
 
-* [captain-definition](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/captain-definition) Caprover entry point
-* [Dockerfile](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/Dockerfile) Web app configuration for Docker container
-* [docker-compose.yml](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/docker-compose.yml) ...not use it's used 😅
-* [docker-entry.sh](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/docker-entry.sh) shell instruction to execute when docker image is built
-* [nginx.conf](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/nginx.conf) Nginx server configuration
-* [php.ini](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/php.ini) Php configuration
+* [captain-definition](/captain-definition) Caprover entry point
+* [Dockerfile](/Dockerfile) Web app configuration for Docker container
+* [docker-entry.sh](/docker-entry.sh) shell instruction to execute when docker image is built
+* [nginx.conf](/ginx.conf) Nginx server configuration
+* [php.ini](/php.ini) Php configuration
 
 
 ## Built With

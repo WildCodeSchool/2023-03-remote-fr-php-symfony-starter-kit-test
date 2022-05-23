@@ -4,6 +4,7 @@ includes:
     - vendor/phpstan/phpstan-symfony/extension.neon
 parameters:
     excludePaths:
+    - src/Security
     ignoreErrors:
     reportUnmatchedIgnoredErrors: false
     checkGenericClassInNonGenericObjectType: false

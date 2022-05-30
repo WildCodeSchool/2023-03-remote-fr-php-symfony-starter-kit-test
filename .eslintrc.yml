@@ -4,8 +4,6 @@ env:
   node: true
 extends:
   - 'eslint:recommended'
-  - 'airbnb'
-  - 'plugin:react/recommended'
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
@@ -17,7 +15,6 @@ parserOptions:
 rules: {
   no-console: 'error',
   indent: ['error', 4],
-  import/no-extraneous-dependencies: ["error", {"devDependencies": true}],
   no-unused-vars: 0,
-  no-param-reassign: 1,
+  no-param-reassign: 0,
 }

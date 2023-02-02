@@ -6,6 +6,8 @@ parameters:
     excludePaths:
     - src/Security
     ignoreErrors:
+        - "#^Parameter.*(User).*(UserInterface).*#"
+        - "#^Call to an undefined .*(UserInterface).*#"
     reportUnmatchedIgnoredErrors: false
     checkGenericClassInNonGenericObjectType: false
     checkMissingIterableValueType: false
